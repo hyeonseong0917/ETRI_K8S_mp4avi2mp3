@@ -1,0 +1,9 @@
+SRC="Source"
+TG="Target"
+PROCESSING="Processing"
+FINISHED="Finished"
+DELETED="Deleted"
+MONGODB_URI="129.254.202.111"
+MONGODB_PORT=27017
+AVAIL="Available"
+UNAVAIL="UnAvailable"
