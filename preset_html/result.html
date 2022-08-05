@@ -1,0 +1,14 @@
+<a href="http://129.254.202.111:30111/upload">back to home</a>
+<button onClick="window.location.reload()">refresh</button>
+{% for item in result_DB %}
+    <p> 
+        your id is : {{item["_id"]}},
+        your item is : {{ item["FILENAME"] }},
+        your diretory is : "{{ item['DIR']}}",
+        your status is : {{ item["STATUS"]}},
+        your datetime is : {{ item["DATETIME"]}}
+        {% if item['STATUS']=="Finished" %}
+            <a href="/{{item['_id']}}">{{item["FILENAME"][:-4]}}.mp3"</a>
+        {% endif %}
+    </p>
+{% endfor %}
